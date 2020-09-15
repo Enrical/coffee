@@ -35,7 +35,6 @@
 }
 
 .info__item {
-	// border: 2px solid red;
 	position: relative;
 	overflow: hidden;
 	&:hover {
@@ -45,19 +44,28 @@
 
 	.info__img {
 		display: block;
+		@media (max-width: $medium) {
+			height: 30em;
+			width: 30em;
+			margin: 0 auto;
+		}
 	}
 
 	.text-info{
 		margin: 4em 2em 0em 2em;
+		@media (max-width: $medium) {
+			margin: 8em 2em 0em 2em;
+
+		}
 		
 		.job-tittle{
 			font-style: italic;
 		}
 	}
 
-.info__title{
-	margin-bottom: 0;
-}
+	.info__title{
+		margin-bottom: 0;
+	}
 
 	.backcolor {
 	  position: absolute;
@@ -68,15 +76,23 @@
 	  background-color: rgba($black, 0.7);
 	  transition: bottom 0.5s ease;
 	  color: white;
+
+		@media (max-width: $medium) {
+			height: 30em;
+			width: 30em;
+			align-content: center;
+			margin-left: 50%;
+			transform: translateX(-50%);
+		}
 	}
+	
 	&:hover .backcolor {
 		bottom: 0;
 	}
 
-	@media (min-width: $medium) {
-			width: 33%;
-		}
 }
+
+
 
 .form {
 	display: flex;
