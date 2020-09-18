@@ -38,6 +38,11 @@ a {
 		color: darken($blue, 5%);
 	}
 }
+button {
+  background-color: unset;
+  padding: 0;
+  font-weight: 300;
+}
 
 .main {
 	width: 90%;
